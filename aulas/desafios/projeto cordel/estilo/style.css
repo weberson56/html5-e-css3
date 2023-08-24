@@ -1,0 +1,107 @@
+@charset "UTF-8";
+ 
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+
+
+:root{
+    --fonte1:  Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Bungee Spice', cursive;
+    --fonte3: 'Srisakdi', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    max-width: 100vw;
+  
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding: 30px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 9vw;
+}
+
+header > p{
+    padding-bottom: 30px;
+}
+
+ header a, footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover, footer a :hover{
+    background-color: blanchedalmond;
+    text-decoration: underline;
+    transition-duration: 2s;
+    border-radius: 5px;
+    font-style: italic;
+    font-family: var(--fonte2);
+}
+
+section{
+    padding: 10vh 0vh 10vh 0vh;
+    line-height: 3em;
+    padding-left:30px;
+    font-family: var(--fonte3);
+    font-size: 2vw;   
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 5px 5px 20px black;
+    border-radius: 10px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.16);
+    padding: 0px 0px 0px 10px;
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+    text-shadow: 1px 3px 2px black;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 5px;
+}

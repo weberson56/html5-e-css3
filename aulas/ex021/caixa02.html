@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gruping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+        header{
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: bisque;
+        }
+        article > aside{
+            color: chartreuse;
+            padding: 10px;
+        }
+        nav{
+            background-color: cornflowerblue;
+            text-align: center;
+            padding: 50px;
+            margin: 10px;
+            border: 1px;
+            box-shadow: inset -10px -10px 5px 10px rgba(24, 25, 28, 0.452);
+        }
+        nav > a {
+            text-decoration: rgb(19, 3, 232);
+            color: rgb(6, 14, 238);
+            font-weight: 900;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        main{
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px 20px 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        footer{
+            background-color: cadetblue;
+            color: blue;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        div#ola{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background-color: rgb(255, 123, 0);
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <p>tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>noticia sobre algum lugar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt culpa temporibus ab iusto officia quisquam repellendus repellat cum provident voluptatem perspiciatis distinctio blanditiis architecto perferendis, odit deserunt aut nemo in.</p>
+                <aside>
+                    <p>artigo escrito por alguem</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    
+    <footer>desenvolvido</footer>
+    <div id="ola"></div>
+</body>
+</html>

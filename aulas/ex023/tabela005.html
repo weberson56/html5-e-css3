@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .destaque{
+            
+        }
+        .cnome {
+            background-color: aqua;
+        }
+        .grupo{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercicio</h1>
+    
+    <table>
+    <colgroup>
+        <col class="cnome" span="2">
+        <col class="grupo" span="2">
+    </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissao</th>
+        </tr>
+        <tr>
+            <td class="destaque">ana maria</td>
+            <td>f</td>
+            <td>25</td>
+            <td>programador</td>
+        </tr>
+        <tr>
+            <td>helio</td>
+            <td>m</td>
+            <td>28</td>
+            <td>programador</td>
+        </tr>
+        <tr>
+            <td>maria</td>
+            <td>f</td>
+            <td>39</td>
+            <td>medica</td>
+        </tr>
+        <tr>
+            <td>otavio</td>
+            <td>m</td>
+            <td>22</td>
+            <td>nutricionista</td>
+        </tr>
+    </table>
+</body>
+</html>

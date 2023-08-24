@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>links</title>
+    <style>
+
+        /* seletores personalizados
+           #  = id
+           .  = class
+           :  = pseudo-calss
+           :: = pseudo-element
+           >  = clidren
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color:aqua ;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: rgb(0, 255, 174);
+        }
+        a:hover{
+            color: cadetblue;
+            text-decoration: underline;
+        }
+        a:active{
+            color: rgb(223, 228, 237);
+        }
+        .especial{
+            background-color: rgb(60, 11, 222);
+        }
+        .especial::before{
+            content: '↔';
+            color: brown;
+        }
+        .especial::after{
+            content: '↔';
+            color: rgb(255, 119, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <abbr title="clicar aqui">
+            <li><a href="https://www.youtube.com/watch?v=D2l171y-cIE">repositorio GitHub</a></li>
+        </abbr>
+        <abbr title="clicar aqui">
+            <li><a href="https://www.youtube.com/watch?v=zIglkMVkk60" class="especial">canal do youtube</a></li>
+        </abbr>
+        <abbr title="clicar aqui">
+            <li><a href="https://www.youtube.com/watch?v=POBfzC-Tj5U">site do cursoemvideo</a></li>
+        </abbr>
+    </ul>
+</body>
+</html>
