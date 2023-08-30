@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomulario</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <div>
+                <label for="iemal">e-mail:</label>
+                <input type="email" name="email" id="iemal" required placeholder="email" autocomplete="email">
+            </div><br>
+            <div>
+                <label for="itel">telefone</label>
+                <input type="tel" name="telefone" id="itel"
+                required
+                autocomplete="tel-national"
+                pattern="^\(d\{2}\)\d{4,5}-\d{4}$"
+                placeholder="(xx) xxxx-xxxx">
+            </div>
+            <div><br>
+                <input type="submit" value="enviar">
+                <input type="reset" value="apagar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
