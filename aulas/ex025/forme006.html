@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .cor > input{
+        border-radius: 100%;
+    }
+    </style>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div class="cor">
+            <label for="icor">cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </div>
+
+        <div>
+            <label for="inivel">nivel de sastifacao</label>
+            <input type="range" name="nivel" id="inivel" value="0" min="0" max="5">
+        </div>
+
+        <div>
+            <label for="ifoto">foto</label>
+            <input type="file" name="foto" id="ifoto">
+        </div>
+
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+    </form>
+</body>
+</html>
