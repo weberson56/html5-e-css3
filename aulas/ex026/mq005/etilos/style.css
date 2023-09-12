@@ -1,5 +1,86 @@
 @charset "utf-8";
 
-body, html{
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
     background-color: rgba(0, 255, 255, 0.26);
+}
+
+header {
+    background-color: rgba(127, 255, 212, 0.356);
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    color: rgba(215, 243, 8, 0.292);
+}
+
+menu{
+    display: none;
+}
+
+i#burgue:hover{
+    color: rgb(7, 238, 169);
+    background-color: chocolate;
+    width: 10%;
+    margin: auto;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+i#burgue{
+    background-color: darkgray;
+    color: aqua;
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none; 
+    text-align: center;
+    background-color: darkolivegreen;
+    border-top: 2px solid black;
+}
+
+menu > ul > li > a:hover{
+    color: rgb(7, 238, 169);
+    background-color: chocolate;
+    width: 10%;
+    margin: auto;
+    border-radius: 10px 0px 10px 0px ;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+main{
+    width: 90vw;
+    background-color: blue;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px 0px 10px 0px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    padding: 0px 0px 20px 0px;
+    text-indent: 20px;
 }

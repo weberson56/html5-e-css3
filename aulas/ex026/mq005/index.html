@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>midia query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="etilos/style.css">
 </head>
 <body>
     <header>
         <h1>meu site</h1>
-        <menu>
+        <i id="burgue" class="material-icons" onclick="clickMenu()" >menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">opcao1</a></li>
                 <li><a href="#">opcao2</a></li>
@@ -28,9 +30,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis reprehenderit adipisci dicta architecto officia, dolores iusto laborum, voluptas suscipit nemo assumenda consectetur, nulla libero qui nostrum sit quos consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum amet unde nulla ad aliquid ratione quod, id maiores iste, blanditiis doloremque eos ea. Dolorem esse ut tenetur laudantium voluptates!</p>
         </article>
     </main>
-
-    <footer>
-
-    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'nome'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
