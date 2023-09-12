@@ -19,7 +19,7 @@ body{
 
 main{
     background-color: rgba(0, 255, 255, 0.256);
-    width: 90vw;
+    width: 90vh;
     margin: auto;
     border-radius: 10px;
 }
@@ -36,12 +36,12 @@ img{
     margin: auto;
 }
 
-img#celular{display: block;}
+img#celular{ display: block; }
 
-img#tablete{display: none;}
+img#tablete{ display: none; }
 
-img#pc{display: none;}
+img#pc{ display: none; }
 
-img#tv{display: none;}
+img#tv{ display: none; }
 
-img#print{display: none;}
+img#print{ display: none; }
