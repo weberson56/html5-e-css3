@@ -6,8 +6,9 @@
     <title>midia query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="etilos/style.css">
+    <link rel="stylesheet" href="etilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamaho()">
     <header>
         <h1>meu site</h1>
         <i id="burgue" class="material-icons" onclick="clickMenu()" >menu</i>
@@ -37,6 +38,11 @@
             } else{
                 itens.style.display = 'block'
             }
+        }
+
+        function mudouTamaho(){
+            if (window.innerWidth >= 768)
+                itens.style.display = 'block'
         }
     </script>
 </body>

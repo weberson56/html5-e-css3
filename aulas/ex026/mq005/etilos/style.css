@@ -59,7 +59,7 @@ menu > ul > li > a {
 menu > ul > li > a:hover{
     color: rgb(7, 238, 169);
     background-color: chocolate;
-    width: 10%;
+    width: 50px;
     margin: auto;
     border-radius: 10px 0px 10px 0px ;
     transition: 0.5s;
